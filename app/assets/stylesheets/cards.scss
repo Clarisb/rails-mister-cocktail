@@ -1,8 +1,40 @@
 .cocktail-card {
-  height: 175px;
+  height: 200px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
   color: white;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  box-shadow: 3px 4px #ff7517;
+  border-radius: 3px;
+}
+
+.cocktail-card h2 {
+  font-family: 'Lobster', cursive;
+  font-weight: lighter;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 2px 2.5px #070F12;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+a {
+color: white;
+transition: all 0.48s;
+  &:hover {
+    color: #ff7517;
+    text-decoration: none;
+    opacity: 0.9;
+  }
+}
+
+a:visited {
+  color: #ff7517;
+  text-decoration: none;
+  opacity: 0.9;
 }

@@ -2,7 +2,7 @@
   background-color: gray;
   color: white;
   text-align: center;
-  height: 50vh;
+  height: 65vh;
   background-size: cover !important;
   display: flex;
   align-items: center;
@@ -11,18 +11,21 @@
 
 .banner-content h1 {
   font-family: 'Shrikhand', cursive;
+  color: #ff7517;
+  font-border: 3px solid black;
   font-size: 70px;
   text-align: center;
-  text-shadow: 4px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 4px 5px #070F12;
 }
 
 .banner p {
   font-family: 'Lobster', cursive;
   font-style: italic;
   font-size: 40px;
-  text-shadow: 3px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 3px 4px #070F12;
   font-weight: lighter;
   color: white;
-  opacity: 0.8;
+  opacity: 0.9;
   margin-bottom: 30px;
+  border-bottom: 4px double #ff7517;
 }

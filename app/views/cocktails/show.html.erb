@@ -1,0 +1,32 @@
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path @cocktail.image %>');">
+  <div class="banner-content">
+    <h1><%= @cocktail.name %></h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <% @cocktail.doses.each do |dose| %>
+    <div class="col-sm-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= plant.image_url %>');">
+        <div class="card-description">
+          <h2><%= link_to "destroy this dose", dose_path(dose), method: :delete %></h2>
+          <h2><%= dose.description %></h2>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <%= simple_form_for [@cocktail, @dose] do |f|%>
+        <%= f.input :description %>
+        <%= f.input :cocktail %>
+        <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
+</div>

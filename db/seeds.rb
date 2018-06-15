@@ -10,7 +10,7 @@
 # ingredients = Ingredient.create(name: "mint leaves")
 require 'open-uri'
 require 'json'
-
+Cocktail.delete_all
 results = JSON.parse(open("https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list").read)
 
 results.each do |drink|
@@ -20,11 +20,11 @@ results.each do |drink|
 end
 
 
-cocktails = Cocktail.create(name: "Mojito")
-cocktails = Cocktail.create(name: "Margarita")
-cocktails = Cocktail.create(name: "Piña Colada")
-cocktails = Cocktail.create(name: "Apple Martini")
-cocktails = Cocktail.create(name: "Bee's Knees")
-cocktails = Cocktail.create(name: "Cuba Libre")
-cocktails = Cocktail.create(name: "Long Island Iced Tea")
-cocktails = Cocktail.create(name: "Bloody Margaret")
+cocktails = Cocktail.create(name: "Mojito", image: "Mojito.jpg")
+cocktails = Cocktail.create(name: "Margarita", image: "margarita.jpg")
+cocktails = Cocktail.create(name: "Piña Colada", image: "pina_colada.jpg")
+cocktails = Cocktail.create(name: "Apple Martini", image: "apple_martini.jpeg")
+cocktails = Cocktail.create(name: "Bee's Knees", image: "bees_knees.jpg")
+cocktails = Cocktail.create(name: "Cuba Libre", image: "cuba_libre.jpg")
+cocktails = Cocktail.create(name: "Long Island Iced Tea", image: "Long-Island-Iced-Tea.jpg")
+cocktails = Cocktail.create(name: "Bloody Margaret", image: "Bloody_margaret.jpg")
