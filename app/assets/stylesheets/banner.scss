@@ -1,0 +1,28 @@
+.banner {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  height: 50vh;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 70px;
+  text-align: center;
+  text-shadow: 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.banner p {
+  font-family: 'Lobster', cursive;
+  font-style: italic;
+  font-size: 40px;
+  text-shadow: 3px 4px rgba(0, 0, 0, 0.2);
+  font-weight: lighter;
+  color: white;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}

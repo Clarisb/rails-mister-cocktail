@@ -1,0 +1,19 @@
+<body>
+  <div id="container">
+    <div class="header-container">
+      <div class="header-logo">
+      </div>
+    </div>
+    <div class="main-title"> Doses </div>
+    <div class="doses-container">
+    </div>
+    <div class="form-create">
+      <%= simple_form_for [@dose] do |f| %>
+      <%= f.input :description %>
+      <%= f.button :submit %>
+      <%= f.association :ingredient %>
+      <%= f.association :cocktail %>
+      <% end %>
+    </div>
+  </div>
+</body>
